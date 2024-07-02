@@ -1,0 +1,97 @@
+{% extends 'nav.html' %}
+{% block data %}
+
+<!-- On tables -->
+<table class="table-container" >
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Date</th>
+        <th>BP</th>
+        <th>Fever</th>
+        <th>Weight_in_kg</th>
+        <th>Height_in_meters</th>
+    </tr>
+
+    {% for document in recordlist %}
+
+
+        <tr>
+            <td>
+                {{document['Name']}}
+            </td>
+            <td>
+                {{document['Gender']}}
+            </td>
+            <td>
+                {{document['Date']}}
+            </td>
+            <td>
+                {{document['BP']}}
+            </td>
+            <td>
+                {{document['Fever']}}
+            </td>
+            <td>
+                {{document['Weight_in_kg']}}
+            </td>
+            <td>
+                {{document['Height_in_meters']}}
+            </td>
+
+        </tr>
+
+    {% endfor %}
+
+    
+
+</table>
+
+
+<!-- <table>
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Date</th>
+        <th>BP</th>
+        <th>Fever</th>
+        <th>Weight_in_kg</th>
+        <th>Height_in_meters</th>
+    </tr>
+
+    {% for document in recordlist %}
+
+
+        <tr>
+            <td>
+                {{document['Name']}}
+            </td>
+            <td>
+                {{document['Gender']}}
+            </td>
+            <td>
+                {{document['Date']}}
+            </td>
+            <td>
+                {{document['BP']}}
+            </td>
+            <td>
+                {{document['Fever']}}
+            </td>
+            <td>
+                {{document['Weight_in_kg']}}
+            </td>
+            <td>
+                {{document['Height_in_meters']}}
+            </td>
+
+        </tr>
+
+    {% endfor %}
+
+    
+
+</table> -->
+
+
+{% endblock %}

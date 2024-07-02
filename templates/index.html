@@ -1,0 +1,21 @@
+{% extends 'nav.html' %}
+{% block data %}
+
+
+    <div class="container" style="position: absolute; top: 40%; left:33%; max-width:500px ">
+        <form action="/submit" method="post">
+            <div>
+                <select class="form-select" name="select" aria-label="Disabled select example" style="text-align: center; margin: 10px;" required>
+                    <option selected disabled value="">Select operation</option>
+                    <option value= '0' >Add records</option>
+                    <option value= '1' >Fetch records</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+
+        </form>
+      </div>
+
+{% endblock %}

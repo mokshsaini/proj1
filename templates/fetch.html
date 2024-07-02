@@ -1,0 +1,48 @@
+{% extends 'nav.html' %}
+{% block data %}
+
+<div id="dataform"> 
+  <form class="row g-3" method="post" action="/submit/fetch">
+      <div class="col-md-4">
+        <label for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name"  required>
+      </div>
+      <div class="col-md-4">
+        <label for="Date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="Date" name="Date" >
+      </div>
+      <div class="col-md-4">
+        <label for="BP" class="form-label">BP</label>
+        <input type="text" class="form-control" id="BP" name="BP" aria-describedby="inputGroupPrepend2" >
+      </div>
+      <div class="col-md-4">
+        <label for="Weight_in_kg" class="form-label">Weight_in_kg</label>
+        <input type="text" inputmode="decimal" class="form-control" id="Weight_in_kg" name="Weight_in_kg" >
+      </div>
+      <div class="col-md-4">
+        <label for="Gender" class="form-label">Gender</label>
+        <select class="form-select" id="Gender" name="Gender" >
+          <option selected disabled value="">Choose...</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="Height_in_meters" class="form-label">Height_in_meters</label>
+        <input type="text" inputmode="decimal" class="form-control" id="Height_in_meters" name="Height_in_meters" >
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="True" id="Fever"  name="Fever">
+          <label class="form-check-label" for="Fever">
+              Fever
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+</div>
+{% endblock %}
