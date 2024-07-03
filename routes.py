@@ -41,7 +41,7 @@ async def add(request:Request):
     return {'success':True}
 
 @router1.post('/submit/fetch')
-async def add(request:Request):
+async def fetch(request:Request):
     form = await request.form()
     form_dict = dict(form)
 
