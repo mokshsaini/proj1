@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pymongo = "*"
+typing = "*"
+fastapi = "*"
 
 [dev-packages]
 
