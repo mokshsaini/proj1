@@ -1,4 +1,4 @@
 from pymongo import MongoClient
 
-database = MongoClient('''type your connection string''')
+database = MongoClient('''Enter your connection string''')
 
